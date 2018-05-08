@@ -25,7 +25,7 @@ void Widget::mousePressEvent(QMouseEvent *qme)
     if(qme->button() & Qt::LeftButton)
     {
         QPoint presspos(qme->x(),qme->y());
-        //qDebug()<<x<<y;
+        qDebug() << presspos;
         if(game && Game::vertexTopLeft < presspos && presspos < Game::vertexBottomRight)
         {
             game->putChess(presspos);

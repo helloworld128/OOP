@@ -22,7 +22,7 @@ public:
 
     //member functions
     Game* game;
-    void createGame(QWidget* parent){game = new Game(parent);}
+    void createGame(QWidget* parent){game = new Game(parent); game->init();}
 
 protected:
 
