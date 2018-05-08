@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QMouseEvent>
+#include <QLCDNumber>
 #include "games.h"
 
 namespace Ui {
@@ -13,6 +14,8 @@ class Widget : public QWidget
 {
     Q_OBJECT
 
+    Ui::Widget *ui;
+
 public:
     explicit Widget(QWidget *parent = 0);
     ~Widget();
@@ -22,14 +25,16 @@ public:
 
     //member functions
     Game* game;
-    void createGame(QWidget* parent){game = new Game(parent); game->init();}
+    void createGame(QWidget* parent);
 
 protected:
 
     void mousePressEvent(QMouseEvent *);
 
-private:
-    Ui::Widget *ui;
+private slots:
+
+    void on_Start_Button_clicked();
+
 };
 
 #endif // WIDGET_H

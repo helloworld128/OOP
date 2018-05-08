@@ -8,11 +8,19 @@ Widget::Widget(QWidget *parent) :
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
+    //ui->Board->hide();
 }
 
 Widget::~Widget()
 {
     delete ui;
+}
+
+void Widget::createGame(QWidget *parent)
+{
+    game = new Game(parent);
+    game->black = ui->BCount_LCD;
+    game->white = ui->WCount_LCD;
 }
 
 bool operator <(const QPoint& left,const QPoint& right)
@@ -31,4 +39,10 @@ void Widget::mousePressEvent(QMouseEvent *qme)
             game->putChess(presspos);
         }
     }
+}
+
+
+void Widget::on_Start_Button_clicked()
+{
+    game->init();
 }

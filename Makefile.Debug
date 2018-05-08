@@ -562,6 +562,11 @@ debug\widget.obj: widget.cpp widget.h \
 		D:\Qt\5.10.1\msvc2017_64\include\QtWidgets\qtabbar.h \
 		D:\Qt\5.10.1\msvc2017_64\include\QtWidgets\qtabwidget.h \
 		D:\Qt\5.10.1\msvc2017_64\include\QtWidgets\qrubberband.h \
+		D:\Qt\5.10.1\msvc2017_64\include\QtWidgets\QLCDNumber \
+		D:\Qt\5.10.1\msvc2017_64\include\QtWidgets\qlcdnumber.h \
+		D:\Qt\5.10.1\msvc2017_64\include\QtWidgets\QPushButton \
+		D:\Qt\5.10.1\msvc2017_64\include\QtWidgets\qpushbutton.h \
+		D:\Qt\5.10.1\msvc2017_64\include\QtWidgets\qabstractbutton.h \
 		D:\Qt\5.10.1\msvc2017_64\include\QtCore\QDebug
 
 debug\games.obj: games.cpp games.h \
@@ -670,7 +675,8 @@ debug\games.obj: games.cpp games.h \
 		D:\Qt\5.10.1\msvc2017_64\include\QtCore\qfile.h \
 		D:\Qt\5.10.1\msvc2017_64\include\QtCore\qfiledevice.h \
 		D:\Qt\5.10.1\msvc2017_64\include\QtGui\qvector2d.h \
-		D:\Qt\5.10.1\msvc2017_64\include\QtGui\qtouchdevice.h
+		D:\Qt\5.10.1\msvc2017_64\include\QtGui\qtouchdevice.h \
+		D:\Qt\5.10.1\msvc2017_64\include\QtCore\QDebug
 
 debug\qrc_res.obj: debug\qrc_res.cpp 
 

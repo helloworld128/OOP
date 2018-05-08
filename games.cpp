@@ -22,13 +22,19 @@ void Game::drawChess(int x,int y,int player)
 
 void Game::init()
 {
-    for(int i = 0;i < 9;i++)
-        for(int j = 0;j < 9;j++)
+    for(int i = 0;i < 8;i++)
+        for(int j = 0;j < 8;j++)
+        {
             board[i][j] = -1;
+            pictures[i][j]->hide();
+        }
+    activePlayer = 0;
     drawChess(3,3,0);
     drawChess(4,4,0);
     drawChess(3,4,1);
     drawChess(4,3,1);
+    black->display(2);
+    white->display(2);
 }
 
 bool Game::canPut(int xpos, int ypos)
@@ -81,6 +87,17 @@ void Game::update(int xpos, int ypos)
             for(int j = 0;j < p;j++)
                 drawChess(reverseList[j][0],reverseList[j][1],activePlayer);
     }
+
+    //Calculate chess numbers & display
+    int b = 0, w = 0;
+    for(int i = 0;i < 8;i++)
+        for(int j = 0;j < 8;j++)
+        {
+            if(board[i][j] == 0) b++;
+            if(board[i][j] == 1) w++;
+        }
+    black->display(b);
+    white->display(w);
 }
 
 void Game::putChess(const QPoint &pos)
