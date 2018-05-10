@@ -147,7 +147,7 @@
     <string>Start</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="Title_Label">
    <property name="geometry">
     <rect>
      <x>280</x>
@@ -183,7 +183,7 @@ color:rgb(255, 170, 255)</string>
     <string>Reversi</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="Start_Button_3">
+  <widget class="QPushButton" name="Go_Button">
    <property name="geometry">
     <rect>
      <x>340</x>
@@ -199,7 +199,7 @@ color:rgb(255, 170, 255)</string>
     <string>Go</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="FiveinaRow_Button">
+  <widget class="QPushButton" name="FIR_Button">
    <property name="geometry">
     <rect>
      <x>340</x>
@@ -213,6 +213,25 @@ color:rgb(255, 170, 255)</string>
    </property>
    <property name="text">
     <string>5inaRow</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="BillBoard">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>40</y>
+     <width>181</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 40pt &quot;Adobe Arabic&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
  </widget>

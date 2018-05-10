@@ -26,14 +26,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         widget.cpp \
-    games.cpp
+    games.cpp \
+    dialog.cpp
 
 HEADERS += \
         widget.h \
-        games.h
+        games.h \
+    dialog.h
 
 FORMS += \
-        widget.ui
+        widget.ui \
+    dialog.ui
 
 DISTFILES +=
 

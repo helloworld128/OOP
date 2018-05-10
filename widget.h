@@ -20,21 +20,23 @@ public:
     explicit Widget(QWidget *parent = 0);
     ~Widget();
 
-    //constants
-    //(null)
-
-    //member functions
     Game* game;
-    void createGame(QWidget* parent);
 
 protected:
-
     void mousePressEvent(QMouseEvent *);
+
+private:
+    void hideHomeScreenUI();
+    void showHomeScreenUI();
 
 private slots:
 
     void on_Start_Button_clicked();
-
+    void on_Reversi_Button_clicked();
+    void on_FIR_Button_clicked();
+    void on_Go_Button_clicked();
+    void on_Undo_Button_clicked();
+    void on_Menu_Button_clicked();
 };
 
 #endif // WIDGET_H
